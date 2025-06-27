@@ -23,16 +23,17 @@
 <body class="bg-stone-900 text-white font-[Tomorrow]">
     <header class="items-center bg-stone-800">
         <div class="content-center py-3 z-4">
-            <img class="h-14 pl-17" src="./assets/img/logo-douglas.png" alt="Douglas Alves">
+            <img class="h-14 pl-17 md:pl-8" src="./assets/img/logo-douglas.png" alt="Douglas Alves">
         </div>
         <div
-            class="h-120 bg-stone-500 bg-[url(./assets/img/bg-header.png)] bg-no-repeat bg-cover bg-blend-multiply px-100 content-center z-10">
+            class="h-120 bg-stone-500 bg-[url(./assets/img/bg-header.png)] bg-no-repeat bg-cover bg-blend-multiply px-4 md:px-12 lg:px-100 content-center z-10">
             <div class="text-start content-center">
-                <h1 class="text-5xl font-bold mb-6">Desvende o Futuro do seu Negócio</h1>
-                <p class="text-lg mb-6">Transformando ideias em interfaces interativas e experiências digitais
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Desvende o Futuro do seu Negócio</h1>
+                <p class="text-lg md:text-lg mb-6">Transformando ideias em interfaces interativas e experiências
+                    digitais
                     incríveis.</p>
             </div>
-            <div class="flex justify-start gap-4">
+            <div class="flex sm:flex-row justify-start gap-4">
                 <button class="bg-white text-black px-6 py-2 rounded cursor-pointer">Fale
                     Comigo</button>
                 <button class="border border-white bg-black text-white px-6 py-2 rounded cursor-pointer">Ver
@@ -42,10 +43,11 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 py-8 space-y-12">
-        <section class="py-20">
-            <div class="bg-stone-800 p-10">
-                <h2 class="text-5xl font-semibold mb-5">Sobre Mim: Paixão por Tecnologia</h2>
-                <p class="text-lg mt-3">Com uma trajetória dedicada ao desenvolvimento front-end, minha paixão reside em
+        <section class="py-16 md:py-20 bg-stone-800 text-white">
+            <div class="mx-auto px-4 md:px-8 lg:px-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">Sobre Mim: Paixão por Tecnologia</h2>
+                <p class="text-base md:text-lg leading-relaxed">Com uma trajetória dedicada ao desenvolvimento
+                    front-end, minha paixão reside em
                     criar soluções inovadoras que unem design e funcionalidade. Ao longo de 5 anos na área, acumulei
                     experiência em diversos projetos, com sites responsivos e intuitivos. Minha formação sólida e a
                     busca constante por aprendizado me permitem entregar resultados de alta qualidade, sempre focado na
@@ -115,96 +117,120 @@
             </div>
         </section>
 
-        <section class="">
-            <h2 class="text-5xl font-semibold mb-2">Portfólio de Projetos: Minhas Conquistas</h2>
-            <div class="flex justify-between max-w-screen py-4">
-                <img class="w-120 h-auto mr-3" src="./assets/img/case-1.png" alt="">
-                <img class="w-120 h-auto mr-3" src="./assets/img/case-2.png" alt="">
-                <img class="w-30 h-auto mr-3" src="./assets/img/case-1Responsive.png" alt="">
-                <img class="w-30 h-auto mr-3" src="./assets/img/case-2Responsive.png" alt="">
+        <section class="py-16 px-4 md:px-8 lg:px-12">
+            <div class="mx-auto">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">Portfólio de Projetos: Minhas Conquistas
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <img class="w-full h-auto object-cover rounded shadow" src="./assets/img/case-1.png" alt="">
+                    <img class="w-full h-auto object-cover rounded shadow" src="./assets/img/case-2.png" alt="">
+                </div>
+                <p class="md:text-lg leading-relaxed">Explore alguns dos meus trabalhos mais recentes. Cada projeto foi
+                    desenvolvido com
+                    atenção aos detalhes, utilizando as tecnologias mais adequadas para solucionar desafios específicos
+                    e
+                    entregar resultados de impacto. Para mais detalhes e acesso aos repositórios, visite meu <a
+                        class="font-semibold underline" href="https://github.com/DouglasReiz"
+                        target="_blank">GitHub</a>.</p>
+
             </div>
-            <p class="text-lg">Explore alguns dos meus trabalhos mais recentes. Cada projeto foi desenvolvido com
-                atenção aos detalhes, utilizando as tecnologias mais adequadas para solucionar desafios específicos e
-                entregar resultados de impacto. Para mais detalhes e acesso aos repositórios, visite meu <a
-                    class="font-semibold underline" href="https://github.com/DouglasReiz">GitHub</a>.</p>
         </section>
 
-        <section class="bg-stone-800 p-10">
-            <h2 class="text-5xl font-semibold mb-4">Processo de Trabalho: Do Conceito à Entrega</h2>
+        <section class="bg-stone-800 py-16 px-4 md:px-8 lg:px-12 text-white">
+            <div class="max-w-5xl mx-auto">
 
-            <div class="space-y-1">
-                <div class="flex items-center">
-                    <div class="bg-stone-700 w-22 h-26 clip-custom text-white flex items-center justify-center mr-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 15a2 2 0 0 1-2 2H5l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" />
-                        </svg>
-                    </div>
-                    <div class="block">
-                        <p class="text-xl font-semibold">Briefing & Planejamento</p>
-                        <p class="text-xl">Entendimento aprofundado das suas necessidades e objetivos.</p>
-                    </div>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-10">Processo de Trabalho: Do Conceito à Entrega</h2>
 
-                </div>
-                <div class="flex items-center ">
-                    <div class="bg-stone-700 w-22 h-26 clip-custom text-white flex items-center justify-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15.232 5.232l3.536 3.536M9 11l6-6 3.536 3.536-6 6H9v-3.536zM3 21h18" />
-                        </svg>
-                    </div>
-                    <div class="block">
-                        <p class="text-xl font-semibold">Prototipação & Design</p>
-                        <p class="text-xl">Criação de wireframes e mockups em ferramentas como Figma.</p>
+                <div class="space-y-1">
+                    <!-- Etapa 1 -->
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="bg-stone-700 w-16 h-16 md:w-22 md:h-26 clip-custom text-white flex items-center justify-center">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 15a2 2 0 0 1-2 2H5l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" />
+                            </svg>
+                        </div>
+                        <div class="block">
+                            <p class="text-lg md:text-xl font-semibold">Briefing & Planejamento</p>
+                            <p class="text-base md:text-lg">Entendimento aprofundado das suas necessidades e objetivos.</p>
+                        </div>
+
                     </div>
 
-                </div>
-                <div class="flex items-center">
-                    <div class="bg-stone-700 w-22 h-26 clip-custom text-white flex items-center justify-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
-                        </svg>
-                    </div>
-                    <div class="block">
-                        <p class="text-xl font-semibold">Desenvolvimento</p>
-                        <p class="text-xl">Codificação com as melhores práticas de HTML5, CSS3, JavaScript e frameworks.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <div class="bg-stone-700 w-22 h-26 clip-custom text-white flex items-center justify-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9.9 3a4.999 4.999 0 014.2 0M4 13H2m20 0h-2m-1.5-4.5l-1.5 1.5m-11-1.5l1.5 1.5m1.5 7.5v2m4-2v2m-2-16a6 6 0 016 6v4a6 6 0 01-12 0v-4a6 6 0 016-6z" />
-                        </svg>
-                    </div>
-                    <div class="block">
-                        <p class="text-xl font-semibold">Testes & Otimização</p>
-                        <p class="text-xl">Garantia de responsividade e performance em todos os dispositivos.</p>
+                     <!-- Etapa 2 -->
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="bg-stone-700 w-16 h-16 md:w-22 md:h-26 clip-custom text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15.232 5.232l3.536 3.536M9 11l6-6 3.536 3.536-6 6H9v-3.536zM3 21h18" />
+                            </svg>
+                        </div>
+                        <div class="block">
+                            <p class="text-lg md:text-xl font-semibold">Prototipação & Design</p>
+                            <p class="text-base md:text-lg">Criação de wireframes e mockups em ferramentas como Figma.</p>
+                        </div>
+
                     </div>
 
-                </div>
-                <div class="flex items-center">
-                    <div class="bg-stone-700 w-22 h-26 clip-custom text-white flex items-center justify-center mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                    </div>
-                    <div class="block">
-                        <p class="text-xl font-semibold">Entrega & Suporte</p>
-                        <p class="text-xl">Lançamento do projeto e acompanhamento pós-entrega.</p>
+                    <!-- Etapa 3 -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-stone-700 w-20 h-16 md:w-22 md:h-26 clip-custom text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                            </svg>
+                        </div>
+                        <div class="block">
+                            <p class="text-lg md:text-xl font-semibold">Desenvolvimento</p>
+                            <p class="text-base md:text-lg">Codificação com as melhores práticas de HTML5, CSS3, JavaScript e
+                                frameworks.
+                            </p>
+                        </div>
                     </div>
 
+                    <!-- Etapa 4 -->
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="bg-stone-700 w-17 h-16 md:w-22 md:h-26 clip-custom text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.9 3a4.999 4.999 0 014.2 0M4 13H2m20 0h-2m-1.5-4.5l-1.5 1.5m-11-1.5l1.5 1.5m1.5 7.5v2m4-2v2m-2-16a6 6 0 016 6v4a6 6 0 01-12 0v-4a6 6 0 016-6z" />
+                            </svg>
+                        </div>
+                        <div class="block">
+                            <p class="text-lg md:text-xl font-semibold">Testes & Otimização</p>
+                            <p class="text-base md:text-lg">Garantia de responsividade e performance em todos os dispositivos.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Etapa 5 -->
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="bg-stone-700 w-14 h-16 md:w-22 md:h-26 clip-custom text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div class="block">
+                            <p class="text-lg md:text-xl font-semibold">Entrega & Suporte</p>
+                            <p class="text-base md:text-lg">Lançamento do projeto e acompanhamento pós-entrega.</p>
+                        </div>
+
+                    </div>
                 </div>
+                <p class="mt-10 text-base md:text-lg leading-relaxed">Minha abordagem foca em metodologias ágeis e mobile first, garantindo que o
+                    seu
+                    projeto seja robusto, escalável e adaptado para qualquer tela. Ferramentas como VS Code e GitHub são
+                    essenciais no meu dia a dia.</p>
             </div>
-            <p class="mt-2 text-base">Minha abordagem foca em metodologias ágeis e mobile first, garantindo que o seu
-                projeto seja robusto, escalável e adaptado para qualquer tela. Ferramentas como VS Code e GitHub são
-                essenciais no meu dia a dia.</p>
         </section>
 
         <section>
@@ -239,13 +265,19 @@
             <div class="flex items-center">
                 <div class="block">
                     <h2 class="text-4xl font-semibold mb-12">Vamos Criar Juntos?</h2>
-                    <p class="text-lg mb-12">Agradeço seu interesse em meu trabalho. Se você busca um desenvolvedor front-end
-                        dedicado a transformar suas ideias em realidade digital, estou à disposição. Não hesite em entrar em
+                    <p class="text-lg mb-12">Agradeço seu interesse em meu trabalho. Se você busca um desenvolvedor
+                        front-end
+                        dedicado a transformar suas ideias em realidade digital, estou à disposição. Não hesite em
+                        entrar em
                         contato para começarmos a construir o futuro do seu projeto.</p>
                     <div class="mt-4 flex gap-4">
-                        <button class="bg-white text-black px-6 py-2 rounded cursor-pointer mr-2 text-lg font-semibold">Inicie um
+                        <button
+                            class="bg-white text-black px-6 py-2 rounded cursor-pointer mr-2 text-lg font-semibold">Inicie
+                            um
                             Projeto</button>
-                        <a href="#" class="border border-white bg-black text-white px-6 py-2 rounded cursor-pointer text-lg font-semibold">Baixar Currículo</a>
+                        <a href="#"
+                            class="border border-white bg-black text-white px-6 py-2 rounded cursor-pointer text-lg font-semibold">Baixar
+                            Currículo</a>
                     </div>
                 </div>
 
