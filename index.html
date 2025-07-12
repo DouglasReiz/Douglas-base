@@ -21,8 +21,8 @@
             position: fixed;
             pointer-events: none;
             /* Permite clicar nos elementos abaixo */
-            width: 300px;
-            height: 300px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
             mix-blend-mode: screen;
@@ -30,6 +30,12 @@
             filter: blur(40px);
             transform: translate(-50%, -50%);
             z-index: 9999;
+        }
+
+        @media (max-width: 768px) {
+            #light-follow{
+                display: none;
+            }
         }
     </style>
 
