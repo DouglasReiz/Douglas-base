@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
@@ -16,11 +16,27 @@
         .clip-custom {
             clip-path: polygon(0% 0%, 50% 20%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
         }
+
+        #light-follow {
+            position: fixed;
+            pointer-events: none;
+            /* Permite clicar nos elementos abaixo */
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
+            mix-blend-mode: screen;
+            /* Dá o efeito de luz com contraste */
+            filter: blur(40px);
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
     </style>
 
 </head>
 
 <body class="bg-stone-900 text-white font-[Tomorrow]">
+    <div id="light-follow"></div>
     <header class="items-center bg-stone-800">
         <div class="content-center py-3 z-4">
             <img class="h-14 pl-17 md:pl-8" src="./assets/img/logo-douglas.png" alt="Douglas Alves">
@@ -34,10 +50,10 @@
                     incríveis.</p>
             </div>
             <div class="flex sm:flex-row justify-start gap-4">
-                <button class="bg-white text-black px-6 py-2 rounded cursor-pointer">Fale
-                    Comigo</button>
-                <button class="border border-white bg-black text-white px-6 py-2 rounded cursor-pointer">Ver
-                    Portfólio</button>
+                <a href="#talk-to-me" class="bg-white text-black px-6 py-2 rounded cursor-pointer">Fale
+                    Comigo</a>
+                <a href="#portifolio" class="border border-white bg-black text-white px-6 py-2 rounded cursor-pointer">Ver
+                    Portfólio</a>
             </div>
         </div>
     </header>
@@ -117,7 +133,7 @@
             </div>
         </section>
 
-        <section class="py-16 px-4 md:px-8 lg:px-12">
+        <section id="portifolio" class="py-16 px-4 md:px-8 lg:px-12">
             <div class="mx-auto">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">Portfólio de Projetos: Minhas Conquistas
                 </h2>
@@ -240,7 +256,7 @@
             </div>
         </section>
 
-        <section class="px-4 py-10">
+        <section id="talk-to-me" class="px-4 py-10">
             <div class="flex flex-col lg:flex-row items-center lg:items-start gap-10">
                 <img class="w-full max-w-md mx-auto lg:mx-0" src="./assets/img/0a6q8tmUsLRSZLm-LPhMa.png"
                     alt="vamos conversar">
@@ -275,12 +291,8 @@
                         entrar em contato para começarmos a construir o futuro do seu projeto.
                     </p>
                     <div class="mt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                        <button class="bg-white text-black px-6 py-2 rounded cursor-pointer text-lg font-semibold">
+                        <a href="https://wa.me/5522998379997" target="_blank" class="bg-white text-black px-6 py-2 rounded cursor-pointer text-lg font-semibold">
                             Inicie um Projeto
-                        </button>
-                        <a href="#"
-                            class="border border-white bg-black text-white px-6 py-2 rounded cursor-pointer text-lg font-semibold">
-                            Baixar Currículo
                         </a>
                     </div>
                 </div>
@@ -296,6 +308,15 @@
     <footer class="bg-stone-800 text-center py-6 mt-12">
         <p class="text-sm">Made By <span class="font-bold text-blue-500">Douglas Alves</span></p>
     </footer>
+
+    <script>
+        document.addEventListener("mousemove", function (e) {
+            const light = document.getElementById("light-follow");
+            light.style.left = `${e.clientX}px`;
+            light.style.top = `${e.clientY}px`;
+        });
+    </script>
+
 </body>
 
 </html>
